@@ -1,7 +1,7 @@
 import { test } from 'qunit';
 import moduleForAcceptance from 'mystery-diner/tests/helpers/module-for-acceptance';
 
-moduleForAcceptance('Acceptance | list restaurants');
+moduleForAcceptance('Acceptance | list-restaurants');
 
 test('should redirect to restaurants route', function (assert) {
   visit('/');
@@ -13,7 +13,7 @@ test('should redirect to restaurants route', function (assert) {
 test('should list available restaurants.', function (assert) {
   visit('/');
   andThen(function() {
-    assert.equal(find('.listing').length, 3, 'should see 3 listings');
+    assert.equal(find('.listing').length, 4, 'should see 4 listings');
   });
 });
 

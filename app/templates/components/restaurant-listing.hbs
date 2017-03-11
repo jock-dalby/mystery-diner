@@ -3,7 +3,7 @@
         <img src="{{restaurant.image}}" alt="">
         <small>View Larger</small>
     </a>
-    <h3>{{restaurant.title}}</h3>
+    <h3>{{#link-to "restaurants.show" restaurant}}{{restaurant.title}}{{/link-to}}</h3>
     <div class="detail owner">
         <span>Owner:</span> {{restaurant.owner}}
     </div>

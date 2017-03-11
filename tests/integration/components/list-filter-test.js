@@ -37,7 +37,7 @@ test('should initially load all listings', function (assert) {
   // the wait function will return a promise that will wait for all promises
   // and xhr requests to resolve before running the contents of the then block.
   return wait().then(() => {
-    assert.equal(this.$('.city').length, 3);
+    assert.equal(this.$('.city').length, 4);
     assert.equal(this.$('.city').first().text().trim(), 'Wellington');
   });
 });
@@ -64,10 +64,10 @@ test('should update with matching listings', function (assert) {
   `);
 
   // The keyup event here should invoke an action that will cause the list to be filtered
-  this.$('.list-filter input').val('San').keyup();
+  this.$('.list-filter input').val('Wel').keyup();
 
   return wait().then(() => {
     assert.equal(this.$('.city').length, 1);
-    assert.equal(this.$('.city').text().trim(), 'San Francisco');
+    assert.equal(this.$('.city').text().trim(), 'Wellington');
   });
 });

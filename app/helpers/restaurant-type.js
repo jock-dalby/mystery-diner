@@ -7,7 +7,6 @@ const restaurantTypes = [
 ];
 
 export function restaurantType([type]/*, hash*/) {
-  console.log("HIT")
   if (restaurantTypes.includes(type)) {
     return 'Sitdown Restaurant';
   }

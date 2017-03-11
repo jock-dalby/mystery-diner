@@ -56,6 +56,11 @@ export default function() {
       return { data: restaurants };
     }
   });
+
+  // Find and return the provided rental from our restaurant list above
+  this.get('/restaurants/:id', function (db, request) {
+    return { data: restaurants.find((restaurant) => request.params.id === restaurant.id) };
+  });
 }
 
 // These comments are here to help you get started. Feel free to delete them.
