@@ -11,7 +11,7 @@ test('should toggle wide class on click', function(assert) {
   let stubrestaurant = Ember.Object.create({
     image: 'fake.png',
     title: 'test-title',
-    owner: 'test-owner',
+    address: 'test-address',
     type: 'test-type',
     city: 'test-city',
     bedrooms: 3

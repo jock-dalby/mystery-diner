@@ -85,7 +85,7 @@ p {
 
 .menu h1 em {
     position: relative;
-    left: -12px;
+    left: 44px;
 }
 
 .menu a {
@@ -284,7 +284,7 @@ p {
     padding-left: 30px;
 }
 
-.show-listing .owner {
+.show-listing .address {
     margin-top: 10px;
 }
 
