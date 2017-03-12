@@ -1,0 +1,10 @@
+{{#list-filter
+        filter=(action 'filterByCity')
+as |restaurants|}}
+    <ul class="results">
+        {{#each restaurants as |restaurantUnit|}}
+            <li>{{restaurant-listing restaurant=restaurantUnit}}</li>
+        {{/each}}
+    </ul>
+{{/list-filter}}
+{{outlet}}

@@ -1,0 +1,25 @@
+<div class="jumbo show-listing">
+    <h2 class="title">{{model.title}}</h2>
+    <div class="right detail-section">
+        <div class="detail">
+            <strong>Address:</strong> {{model.address}}<span>, </span> {{model.city}}
+        </div>
+        <div class="detail">
+            <strong>Type:</strong> {{restaurant-type model.type}} - {{model.type}}
+        </div>
+        <div class="detail">
+            <strong>Telephone:</strong> {{model.telephone}}
+        </div>
+        <div class="detail">
+            <strong>Website:</strong> <a href="http://{{model.website}}">{{model.website}}</a>
+        </div>
+        <div class="detail address">
+            <p class="description">{{model.description}}</p>
+        </div>
+        {{#link-to 'restaurants'}}
+            &#8656; Back to restaurants page
+        {{/link-to}}
+    </div>
+    <img src="{{model.image}}" class="restaurant-pic">
+</div>
+
