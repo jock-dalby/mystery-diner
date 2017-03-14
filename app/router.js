@@ -12,6 +12,15 @@ Router.map(function() {
   this.route('restaurants', function() {
     this.route('show', { path: '/:restaurant_id' });
   });
+
+  this.route('admin', function() {
+    this.route('invitations');
+    this.route('messages');
+  });
+
+  this.route('libraries', function() {
+    this.route('new');
+  });
 });
 
 export default Router;
