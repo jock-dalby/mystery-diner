@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('contact');
   this.route('restaurants', function() {
     this.route('show', { path: '/:restaurant_id' });
+    this.route('new');
   });
 
   this.route('admin', function() {
@@ -21,6 +22,7 @@ Router.map(function() {
   this.route('libraries', function() {
     this.route('new');
   });
+
 });
 
 export default Router;

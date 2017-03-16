@@ -4,4 +4,11 @@
     <p>Check out the list below to find out which restaurants are looking for mystery diners in your nearest town or city.</p>
 </div>
 
+<div class="well">
+    <ul class="nav nav-pills">
+        {{#link-to 'restaurants.index' tagName="li"}}<a href="">List all</a>{{/link-to}}
+        {{#link-to 'restaurants.new' tagName="li"}}<a href="">Add new</a>{{/link-to}}
+    </ul>
+</div>
+
 {{outlet}}
