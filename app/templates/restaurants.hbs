@@ -1,5 +1,11 @@
 <div class="jumbo">
-    <!--<div class="right tomster"></div>-->
+    <div class="right">
+        {{#if session.isAuthenticated}}
+            <a class="button is-info" {{action 'invalidateSession'}}>Logout</a>
+        {{else}}
+            {{#link-to 'login'}}<a class="button is-info">Login</a>{{/link-to}}
+        {{/if}}
+    </div>
     <h2>Welcome!</h2>
     <p>Check out the list below to find out which restaurants are looking for mystery diners in your nearest town or city.</p>
 </div>

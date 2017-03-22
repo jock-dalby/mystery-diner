@@ -1,7 +1,11 @@
 <article class="listing">
     <a {{action 'toggleImageSize'}} class="image {{if isWide "wide"}}">
         <img src="{{restaurant.image}}" alt="">
+        {{#if isWide}}
+            <p>[X] Close</p>
+        {{else}}
         <small>View Larger</small>
+        {{/if}}
     </a>
     <h3>{{#link-to "restaurants.show" restaurant}}{{restaurant.title}}{{/link-to}}</h3>
     <div class="detail address">

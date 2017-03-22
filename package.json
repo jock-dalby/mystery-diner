@@ -51,6 +51,7 @@
     "ember-cli-bootstrap-sassy": "0.5.5",
     "ember-cli-mirage": "0.2.8",
     "ember-cli-sass": "6.1.1",
-    "ember-cli-tutorial-style": "0.0.7"
+    "ember-cli-tutorial-style": "0.0.7",
+    "ember-simple-auth": "1.2.0"
   }
 }
